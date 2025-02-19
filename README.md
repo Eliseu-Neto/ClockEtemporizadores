@@ -1,3 +1,6 @@
+ATIVIDADE NA BRANCH ATUALIZADA RECENTEMENTE 
+
+
 Leitura do Joystick (ADC - Conversor Analógico-Digital)
 
 Captura os valores dos eixos X e Y do joystick através dos pinos GPIO26 e GPIO27 (ADC).
