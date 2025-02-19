@@ -2,22 +2,26 @@ Leitura do Joystick (ADC - Conversor Analógico-Digital)
 
 Captura os valores dos eixos X e Y do joystick através dos pinos GPIO26 e GPIO27 (ADC).
 O valor varia de 0 a 4095, onde 2048 é a posição central.
+
 ##Controle de LEDs RGB via PWM
 
 O brilho do LED Azul é ajustado conforme o eixo Y.
 O brilho do LED Vermelho é ajustado conforme o eixo X.
 Usa PWM (Modulação por Largura de Pulso) para suavizar a transição do brilho.
 O LED Verde pode ser ligado/desligado ao pressionar o botão do joystick.
+
 ##Exibição do Quadrado no Display OLED SSD1306 (I2C)
 
 O display SSD1306 (128x64 pixels) recebe comandos via I2C (GPIO14 e GPIO15).
 Um quadrado 8x8 pixels é desenhado e se move conforme a posição do joystick.
 A borda do display alterna o estilo ao pressionar o botão do joystick.
+
 ##Interrupções (IRQ) para Botões
 
 Botão do Joystick (GPIO22): Alterna o LED Verde e a borda do display a cada pressionamento.
 Botão A (GPIO5): Liga/desliga os LEDs RGB controlados por PWM.
 Debouncing via software evita leituras falsas ao pressionar os botões rapidamente.
+
 ##Código Otimizado e Estruturado
 
 Implementação modular, com funções organizadas e bem comentadas.
