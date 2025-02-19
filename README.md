@@ -13,7 +13,7 @@ O LED Verde pode ser ligado/desligado ao pressionar o botão do joystick.
 O display SSD1306 (128x64 pixels) recebe comandos via I2C (GPIO14 e GPIO15).
 Um quadrado 8x8 pixels é desenhado e se move conforme a posição do joystick.
 A borda do display alterna o estilo ao pressionar o botão do joystick.
-✅ Interrupções (IRQ) para Botões
+##Interrupções (IRQ) para Botões
 
 Botão do Joystick (GPIO22): Alterna o LED Verde e a borda do display a cada pressionamento.
 Botão A (GPIO5): Liga/desliga os LEDs RGB controlados por PWM.
